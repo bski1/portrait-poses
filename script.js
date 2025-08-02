@@ -12,7 +12,7 @@ const poses = [
   { title: "Seated on Chair", categories: ["Chair", "Female", "Seated"] },
   { title: "Laying Down Pose", categories: ["Laying Down", "Nature"] },
   { title: "Basketball Action", categories: ["Basketball", "Sport", "Male"] },
-  { title: "Urban Fashion", categories: ["Urban", "Standing", "Male"] },
+  { title: "Urban Fashion", categories: ["Urban", "Standing", "Male"] }, 
   { url: "https://www.athletico.com/blog2/wp-content/uploads/2012/07/Istock-swimmer-032410.jpg", categories: ["Swim", "Male"] },
 ];
 
