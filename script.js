@@ -48,7 +48,23 @@ function renderGallery() {
   filtered.forEach(pose => {
     const card = document.createElement('div');
     card.className = 'pose-card';
-    card.textContent = pose.title;
+
+    // Add title if available
+    if (pose.title) {
+      const title = document.createElement('h3');
+      title.textContent = pose.title;
+      card.appendChild(title);
+    }
+
+    // Add image if URL is available
+    if (pose.url) {
+      const img = document.createElement('img');
+      img.src = pose.url;
+      img.alt = pose.title || 'Pose Image';
+      img.style.width = '100%'; // Adjust as needed
+      card.appendChild(img);
+    }
+
     gallery.appendChild(card);
   });
 }
