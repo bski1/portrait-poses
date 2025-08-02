@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portrait Pose Ideas</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+    .button-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .filter-button {
+      padding: 10px 15px;
+      border: 1px solid #aaa;
+      border-radius: 8px;
+      background-color: #eee;
+      cursor: pointer;
+    }
+    .filter-button.active {
+      background-color: #007bff;
+      color: white;
+    }
+    .pose-gallery {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .pose-card {
+      width: 200px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Portrait Pose Filter</h1>
+
+  <div class="button-grid" id="filterButtons"></div>
+
+  <div class="pose-gallery" id="poseGallery"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
